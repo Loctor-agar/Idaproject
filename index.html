@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDAproject</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container-product">
+      <div class="row">
+        <div class="col-12 col-lg-9 add-product">
+          <span class="add-product-title">Добавление товара</h1>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="form-group col-md-6 my-3 pt-3 pr-lg-0 choose-product">
+            <select id="inputProduct" class="form-control select-product">
+              <option selected>По умолчанию</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-3">
+          <form id="formProduct" class="add-product-form">
+            <div class="form-group">
+              <label class="label-form-product" for="inputProductName">Наименование товара</label>
+              <input id="inputProductName" type="text" class="form-control inp"  placeholder="Введите наименование товара" >
+              <small>Поле является обязательным</small>
+            </div>
+            <div class="form-group">
+              <label class="label-form-product" for="exampleFormControlTextarea1">Описание товара</label>
+              <textarea class="form-control " id="exampleFormControlTextarea1" rows="5" placeholder="Введите описание товара"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="label-form-product" for="linkProduct">Ссылка на изображение товара</label>
+              <input id="linkProduct" type="text" class="form-control inp"  placeholder="Введите ссылку" >
+              <small>Поле является обязательным</small>
+            </div>
+            <div class="form-group ">
+              <label class="label-form-product" for="priceProduct">Цена товара</label>
+              <input id="priceProduct" type="text " class="form-control inp"  placeholder="Введите цену" >
+              <small>Поле является обязательным</small>
+            </div>
+            <button class="btn-add-product" disabled="disabled">Добавить товар</button>
+          </form>
+        </div>
+        <div class="col-12 col-lg-9 d-flex ">
+          <div class="row">
+            <div class="col-md-4 product">
+              <a class="link-product" href="#">
+                <div class="card card-product mb-3">
+                  <img class="card-img-top" src="image/product.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-product-title">Наименование товара</span>
+                    <p class="card-product-text">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                    <p class="card-product-price">10 000 руб.</p> 
+                  </div>
+                </div>
+              </a>
+              <a class="delete-product-item" href="#">
+                <i class="far fa-trash-alt delete-icon"></i>
+              </a>
+            </div>
+            <div class="col-md-4 product">
+              <a class="link-product" href="#">
+                <div class="card card-product mb-3">
+                  <img class="card-img-top" src="image/product.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-product-title">Наименование товара</span>
+                    <p class="card-product-text">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                    <p class="card-product-price">10 000 руб.</p> 
+                  </div>
+                </div>
+              </a>
+              <a class="delete-product-item" href="">
+                <i class="far fa-trash-alt delete-icon"></i>
+              </a>
+            </div>
+            <div class="col-md-4 product">
+              <a class="link-product" href="#">
+                <div class="card card-product mb-3">
+                  <img class="card-img-top" src="image/product.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-product-title">Наименование товара</span>
+                    <p class="card-product-text">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                    <p class="card-product-price">10 000 руб.</p> 
+                  </div>
+                </div>
+              </a>
+              <a class="delete-product-item" href="#">
+                <i class="far fa-trash-alt delete-icon"></i>
+              </a>
+            </div>
+            <div class="col-md-4 product">
+              <a class="link-product" href="">
+                <div class="card card-product mb-3">
+                  <img class="card-img-top" src="image/product.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-product-title">Наименование товара</span>
+                    <p class="card-product-text">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                    <p class="card-product-price">10 000 руб.</p> 
+                  </div>
+                </div>
+              </a>
+              <a class="delete-product-item" href="">
+                <i class="far fa-trash-alt delete-icon"></i>
+              </a>
+            </div>
+            <div class="col-md-4 product">
+              <a class="link-product" href="">
+                <div class="card card-product mb-3">
+                  <img class="card-img-top" src="image/product.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-product-title">Наименование товара</span>
+                    <p class="card-product-text">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                    <p class="card-product-price">10 000 руб.</p> 
+                  </div>
+                </div>
+              </a>
+              <a class="delete-product-item" href="">
+                <i class="far fa-trash-alt delete-icon"></i>
+              </a>
+            </div>
+            <div class="col-md-4 product">
+              <a class="link-product" href="">
+                <div class="card card-product mb-3">
+                  <img class="card-img-top" src="image/product.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-product-title">Наименование товара</span>
+                    <p class="card-product-text">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                    <p class="card-product-price">10 000 руб.</p> 
+                  </div>
+                </div>
+              </a>
+              <a class="delete-product-item" href="">
+                <i class="far fa-trash-alt delete-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
